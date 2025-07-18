@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,7 +9,10 @@ const Navigation = () => {
   const navItems = [
     { name: 'Services', href: '#services' },
     { name: 'About', href: '#about' },
-    { name: 'Case Studies', href: '#portfolio' },
+    { name: 'Portfolio', href: '/portfolio' },
+    { name: 'Case Studies', href: '/case-studies' },
+    { name: 'Reviews', href: '/reviews' },
+    { name: 'Information', href: '/information' },
     { name: 'Contact', href: '#contact' },
   ];
 
@@ -24,13 +28,23 @@ const Navigation = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="text-foreground/80 hover:text-primary transition-colors animated-underline"
-              >
-                {item.name}
-              </a>
+              item.href.startsWith('#') ? (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className="text-foreground/80 hover:text-primary transition-colors animated-underline"
+                >
+                  {item.name}
+                </a>
+              ) : (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  className="text-foreground/80 hover:text-primary transition-colors animated-underline"
+                >
+                  {item.name}
+                </Link>
+              )
             ))}
             <Button className="pulse-primary hover-glow">
               Schedule Strategy Call
@@ -51,14 +65,25 @@ const Navigation = () => {
           <div className="md:hidden mt-4 pb-4 border-t border-border/20">
             <div className="flex flex-col space-y-4 pt-4">
               {navItems.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="text-foreground/80 hover:text-primary transition-colors"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {item.name}
-                </a>
+                item.href.startsWith('#') ? (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    className="text-foreground/80 hover:text-primary transition-colors"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.name}
+                  </a>
+                ) : (
+                  <Link
+                    key={item.name}
+                    to={item.href}
+                    className="text-foreground/80 hover:text-primary transition-colors"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                )
               ))}
               <Button className="pulse-primary hover-glow w-fit">
                 Schedule Strategy Call
