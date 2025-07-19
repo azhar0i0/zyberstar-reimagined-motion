@@ -6,49 +6,49 @@
 
 @layer base {
   :root {
-    /* Dark tech theme */
-    --background: 230 35% 7%;
-    --foreground: 210 40% 98%;
+    /* Modern dark slate theme - easy on eyes */
+    --background: 224 21% 6%;
+    --foreground: 213 31% 91%;
 
-    --card: 230 35% 9%;
-    --card-foreground: 210 40% 98%;
+    --card: 224 20% 8%;
+    --card-foreground: 213 31% 91%;
 
-    --popover: 230 35% 9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 224 20% 8%;
+    --popover-foreground: 213 31% 91%;
 
-    /* Bright blue primary for tech feel */
-    --primary: 199 89% 48%;
-    --primary-foreground: 210 40% 98%;
+    /* Sophisticated blue primary */
+    --primary: 213 94% 68%;
+    --primary-foreground: 224 21% 6%;
 
-    /* Glass effect secondary */
-    --secondary: 230 35% 15%;
-    --secondary-foreground: 210 40% 90%;
+    /* Elegant secondary */
+    --secondary: 224 15% 14%;
+    --secondary-foreground: 213 20% 82%;
 
-    --muted: 230 20% 20%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 224 12% 16%;
+    --muted-foreground: 213 15% 70%;
 
-    /* Purple accent for modern touch */
-    --accent: 271 81% 56%;
-    --accent-foreground: 210 40% 98%;
+    /* Refined purple accent */
+    --accent: 262 83% 70%;
+    --accent-foreground: 224 21% 6%;
 
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 72% 65%;
+    --destructive-foreground: 213 31% 91%;
 
-    --border: 230 20% 18%;
-    --input: 230 20% 18%;
-    --ring: 199 89% 48%;
+    --border: 224 15% 16%;
+    --input: 224 15% 16%;
+    --ring: 213 94% 68%;
 
     --radius: 0.75rem;
 
-    /* Custom gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(199 89% 48%) 0%, hsl(271 81% 56%) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(230 35% 7%) 0%, hsl(230 35% 12%) 100%);
-    --gradient-glass: linear-gradient(135deg, hsla(230, 35%, 15%, 0.9) 0%, hsla(230, 35%, 20%, 0.8) 100%);
+    /* Refined gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(213 94% 68%) 0%, hsl(262 83% 70%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(224 21% 6%) 0%, hsl(224 20% 10%) 100%);
+    --gradient-glass: linear-gradient(135deg, hsla(224, 20%, 12%, 0.85) 0%, hsla(224, 15%, 16%, 0.75) 100%);
     
-    /* Modern shadows */
-    --shadow-soft: 0 4px 20px hsla(199, 89%, 48%, 0.15);
-    --shadow-glow: 0 0 40px hsla(199, 89%, 48%, 0.3);
-    --shadow-card: 0 8px 32px hsla(230, 35%, 7%, 0.4);
+    /* Sophisticated shadows */
+    --shadow-soft: 0 4px 24px hsla(213, 94%, 68%, 0.08);
+    --shadow-glow: 0 0 32px hsla(213, 94%, 68%, 0.15);
+    --shadow-card: 0 8px 40px hsla(224, 21%, 6%, 0.6);
     
     /* Animation variables */
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -72,26 +72,26 @@
   }
 
   .light {
-    /* Light mode (backup) */
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Light mode - clean and professional */
+    --background: 0 0% 98%;
+    --foreground: 224 21% 13%;
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 224 21% 13%;
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-    --primary: 199 89% 48%;
-    --primary-foreground: 210 40% 98%;
-    --secondary: 210 40% 96%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-    --muted: 210 40% 96%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 271 81% 56%;
-    --accent-foreground: 210 40% 98%;
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 214.3 31.8% 91%;
-    --input: 214.3 31.8% 91%;
-    --ring: 199 89% 48%;
+    --popover-foreground: 224 21% 13%;
+    --primary: 213 94% 68%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 213 15% 96%;
+    --secondary-foreground: 224 21% 13%;
+    --muted: 213 15% 94%;
+    --muted-foreground: 224 12% 45%;
+    --accent: 262 83% 70%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 72% 65%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 213 15% 88%;
+    --input: 213 15% 88%;
+    --ring: 213 94% 68%;
   }
 }
 
@@ -115,8 +115,9 @@
   /* Glass morphism effect */
   .glass {
     background: var(--gradient-glass);
-    backdrop-filter: blur(20px);
-    border: 1px solid hsla(230, 35%, 25%, 0.3);
+    backdrop-filter: blur(24px);
+    border: 1px solid hsla(224, 15%, 25%, 0.2);
+    box-shadow: var(--shadow-soft);
   }
 
   /* Floating animation */
@@ -231,10 +232,10 @@
 
 @keyframes pulse-primary {
   0%, 100% {
-    box-shadow: 0 0 0 0 hsla(199, 89%, 48%, 0.7);
+    box-shadow: 0 0 0 0 hsla(213, 94%, 68%, 0.5);
   }
   50% {
-    box-shadow: 0 0 0 10px hsla(199, 89%, 48%, 0);
+    box-shadow: 0 0 0 8px hsla(213, 94%, 68%, 0);
   }
 }
 

@@ -63,18 +63,18 @@ const HeroSection = () => {
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 max-w-2xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 max-w-3xl mx-auto">
             {[
-              { number: '50+', label: 'Projects Delivered' },
-              { number: '25+', label: 'Happy Clients' },
-              { number: '3+', label: 'Years Experience' },
+              { number: '500+', label: 'Projects Delivered' },
+              { number: '100+', label: 'Happy Clients' },
+              { number: '4+', label: 'Years Experience' },
               { number: '24/7', label: 'Support Available' },
             ].map((stat, index) => (
-              <div key={index} className="text-center animate-scale-in">
+              <div key={index} className="text-center animate-scale-in glass p-4 rounded-lg hover-glow" style={{ animationDelay: `${index * 100}ms` }}>
                 <div className="text-2xl md:text-3xl font-bold gradient-text mb-2">
                   {stat.number}
                 </div>
-                <div className="text-sm text-foreground/60">
+                <div className="text-sm text-muted-foreground">
                   {stat.label}
                 </div>
               </div>
