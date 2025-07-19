@@ -29,15 +29,7 @@ const Navigation = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
-              item.href.startsWith('#') ? (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="text-foreground/80 hover:text-primary transition-colors animated-underline"
-                >
-                  {item.name}
-                </a>
-              ) : (
+              item.href.startsWith('/') ? (
                 <Link
                   key={item.name}
                   to={item.href}
@@ -45,6 +37,20 @@ const Navigation = () => {
                 >
                   {item.name}
                 </Link>
+              ) : (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  onClick={(e) => {
+                    if (window.location.pathname !== '/') {
+                      e.preventDefault();
+                      window.location.href = item.href;
+                    }
+                  }}
+                  className="text-foreground/80 hover:text-primary transition-colors animated-underline"
+                >
+                  {item.name}
+                </a>
               )
             ))}
             <Button className="pulse-primary hover-glow">
@@ -66,16 +72,7 @@ const Navigation = () => {
           <div className="md:hidden mt-4 pb-4 border-t border-border/20">
             <div className="flex flex-col space-y-4 pt-4">
               {navItems.map((item) => (
-                item.href.startsWith('#') ? (
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    className="text-foreground/80 hover:text-primary transition-colors"
-                    onClick={() => setIsOpen(false)}
-                  >
-                    {item.name}
-                  </a>
-                ) : (
+                item.href.startsWith('/') ? (
                   <Link
                     key={item.name}
                     to={item.href}
@@ -84,6 +81,21 @@ const Navigation = () => {
                   >
                     {item.name}
                   </Link>
+                ) : (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    onClick={(e) => {
+                      setIsOpen(false);
+                      if (window.location.pathname !== '/') {
+                        e.preventDefault();
+                        window.location.href = item.href;
+                      }
+                    }}
+                    className="text-foreground/80 hover:text-primary transition-colors"
+                  >
+                    {item.name}
+                  </a>
                 )
               ))}
               <Button className="pulse-primary hover-glow w-fit">

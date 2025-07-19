@@ -6,37 +6,37 @@ const AboutSection = () => {
   const achievements = [
     {
       icon: Users,
-      number: '25+',
+      number: '150+',
       label: 'Happy Clients',
       description: 'Satisfied customers worldwide'
     },
     {
       icon: Award,
-      number: '50+',
+      number: '500+',
       label: 'Projects Completed',
       description: 'Successful deliveries'
     },
     {
       icon: Clock,
-      number: '3+',
+      number: '4+',
       label: 'Years Experience',
       description: 'In cutting-edge development'
     },
     {
       icon: CheckCircle,
-      number: '100%',
+      number: '98%',
       label: 'Success Rate',
       description: 'Client satisfaction guaranteed'
     }
   ];
 
   const values = [
-    'Cutting-edge AI innovations',
-    'Top-tier technology solutions',
-    'Delivered punctually and within budget',
-    'Dedicated to providing excellence since 2022',
-    'Available across all time zones',
-    'Full-stack expertise from concept to deployment'
+    'Enterprise-grade software solutions',
+    'AI-powered applications and automation',
+    'Scalable cloud-native architectures',
+    'Agile development with rapid delivery',
+    'End-to-end digital transformation',
+    'Continuous support and maintenance'
   ];
 
   return (
@@ -50,12 +50,13 @@ const AboutSection = () => {
             </div>
             
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              We utilize <span className="gradient-text">cutting-edge AI innovations</span> to provide top-tier technology solutions
+              We build <span className="gradient-text">enterprise-grade solutions</span> that scale with your business
             </h2>
             
             <p className="text-lg text-foreground/80 mb-8 leading-relaxed">
-              Since 2022, we have been dedicated to providing excellence in software development, 
-              digital transformation, and innovative solutions that drive businesses forward in the digital age.
+              Founded in 2020, ZyberStar has evolved into a leading software development company specializing in 
+              cutting-edge technologies including AI, blockchain, cloud computing, and enterprise applications. 
+              We partner with businesses of all sizes to deliver innovative solutions that drive digital transformation.
             </p>
 
             {/* Values List */}

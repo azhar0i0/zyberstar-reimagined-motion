@@ -26,22 +26,22 @@ const ServicesSection = () => {
       features: ['User Research', 'Wireframing', 'Prototyping', 'Design Systems']
     },
     {
-      icon: webDevIcon,
-      title: 'Brand Strategy',
-      description: 'Position your brand for success with our in-depth strategy and identity services. Make your story unforgettable.',
-      features: ['Brand Identity', 'Market Research', 'Content Strategy', 'Visual Identity']
-    },
-    {
       icon: digitalTransformIcon,
-      title: 'Game Development',
-      description: 'From concept to console, we craft immersive and engaging game experiences using Unity and Unreal Engine for all platforms.',
-      features: ['Unity Development', 'Unreal Engine', 'Mobile Games', '3D Modeling']
+      title: 'AI & Machine Learning',
+      description: 'Harness the power of artificial intelligence to automate processes, gain insights, and create intelligent applications.',
+      features: ['Custom AI Models', 'Data Analytics', 'Process Automation', 'Predictive Analytics']
     },
     {
       icon: uiuxIcon,
-      title: 'Social Media Campaigns',
-      description: 'Amplify your reach with data-driven social media strategies, creative campaigns, and marketing that delivers measurable results.',
-      features: ['Content Creation', 'Ad Management', 'Analytics', 'Community Management']
+      title: 'Blockchain Solutions',
+      description: 'Secure, transparent, and decentralized applications using cutting-edge blockchain technologies.',
+      features: ['Smart Contracts', 'DeFi Applications', 'NFT Platforms', 'Cryptocurrency Solutions']
+    },
+    {
+      icon: webDevIcon,
+      title: 'Cloud & DevOps',
+      description: 'Scalable cloud infrastructure and automated deployment pipelines for modern applications.',
+      features: ['AWS/Azure/GCP', 'CI/CD Pipelines', 'Container Orchestration', 'Infrastructure as Code']
     }
   ];
 

@@ -35,13 +35,14 @@ const HeroSection = () => {
 
           {/* Main Heading */}
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in-up">
-            Be the <span className="gradient-text">leader</span> in your{' '}
-            <span className="gradient-text">industry</span>
+            Transform Your Business with{' '}
+            <span className="gradient-text">Cutting-Edge</span>{' '}
+            <span className="gradient-text">Technology</span>
           </h1>
 
           {/* Subheading */}
-          <p className="text-xl md:text-2xl text-foreground/80 mb-8 max-w-2xl mx-auto animate-fade-in-up">
-            Connect with a team of skilled software professionals who are dedicated to your vision and success. Available in all time zones.
+          <p className="text-xl md:text-2xl text-foreground/80 mb-8 max-w-3xl mx-auto animate-fade-in-up leading-relaxed">
+            We build exceptional software solutions that drive growth, enhance efficiency, and position your business for the future. From AI-powered applications to enterprise systems.
           </p>
 
           {/* CTA Buttons */}
@@ -66,9 +67,9 @@ const HeroSection = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 max-w-3xl mx-auto">
             {[
               { number: '500+', label: 'Projects Delivered' },
-              { number: '100+', label: 'Happy Clients' },
+              { number: '150+', label: 'Happy Clients' },
               { number: '4+', label: 'Years Experience' },
-              { number: '24/7', label: 'Support Available' },
+              { number: '24/7', label: 'Global Support' },
             ].map((stat, index) => (
               <div key={index} className="text-center animate-scale-in glass p-4 rounded-lg hover-glow" style={{ animationDelay: `${index * 100}ms` }}>
                 <div className="text-2xl md:text-3xl font-bold gradient-text mb-2">
