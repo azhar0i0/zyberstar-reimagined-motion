@@ -99,6 +99,7 @@ const ServicesSection = () => {
                 <Button 
                   variant="ghost" 
                   className="w-full group/btn text-primary hover:text-primary-foreground hover:bg-primary mt-4"
+                  onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
                 >
                   Learn More
                   <ArrowRight className="ml-2 w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
@@ -113,7 +114,11 @@ const ServicesSection = () => {
           <p className="text-lg text-foreground/80 mb-6">
             Ready to transform your business with cutting-edge technology?
           </p>
-          <Button size="lg" className="px-8 py-4 text-lg pulse-primary hover-glow">
+          <Button 
+            size="lg" 
+            className="px-8 py-4 text-lg pulse-primary hover-glow"
+            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+          >
             Get Started Today
             <ArrowRight className="ml-2 w-5 h-5" />
           </Button>

@@ -42,7 +42,11 @@ const Navigation = () => {
                   key={item.name}
                   href={item.href}
                   onClick={(e) => {
-                    if (window.location.pathname !== '/') {
+                    if (item.href.startsWith('/#') && window.location.pathname === '/') {
+                      e.preventDefault();
+                      const target = document.querySelector(item.href.substring(1));
+                      target?.scrollIntoView({ behavior: 'smooth' });
+                    } else if (window.location.pathname !== '/') {
                       e.preventDefault();
                       window.location.href = item.href;
                     }
@@ -87,7 +91,11 @@ const Navigation = () => {
                     href={item.href}
                     onClick={(e) => {
                       setIsOpen(false);
-                      if (window.location.pathname !== '/') {
+                      if (item.href.startsWith('/#') && window.location.pathname === '/') {
+                        e.preventDefault();
+                        const target = document.querySelector(item.href.substring(1));
+                        target?.scrollIntoView({ behavior: 'smooth' });
+                      } else if (window.location.pathname !== '/') {
                         e.preventDefault();
                         window.location.href = item.href;
                       }

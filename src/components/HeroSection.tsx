@@ -50,6 +50,7 @@ const HeroSection = () => {
             <Button 
               size="lg" 
               className="px-8 py-4 text-lg pulse-primary hover-glow group"
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Schedule Strategy Call
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -58,6 +59,7 @@ const HeroSection = () => {
               variant="outline" 
               size="lg"
               className="px-8 py-4 text-lg glass hover-glow border-primary/30 hover:border-primary/50"
+              onClick={() => window.location.href = '/portfolio'}
             >
               See Our Work
             </Button>

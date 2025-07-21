@@ -69,7 +69,11 @@ const AboutSection = () => {
               ))}
             </div>
 
-            <Button size="lg" className="hover-glow">
+            <Button 
+              size="lg" 
+              className="hover-glow"
+              onClick={() => window.location.href = '/information'}
+            >
               Learn More About Us
             </Button>
           </div>
