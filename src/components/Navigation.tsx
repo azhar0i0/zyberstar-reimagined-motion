@@ -57,7 +57,10 @@ const Navigation = () => {
                 </a>
               )
             ))}
-            <Button className="pulse-primary hover-glow">
+            <Button 
+              className="pulse-primary hover-glow"
+              onClick={() => window.open('https://calendly.com/zyberstar/strategy-call', '_blank')}
+            >
               Schedule Strategy Call
             </Button>
           </div>
@@ -106,7 +109,10 @@ const Navigation = () => {
                   </a>
                 )
               ))}
-              <Button className="pulse-primary hover-glow w-fit">
+              <Button 
+                className="pulse-primary hover-glow w-fit"
+                onClick={() => window.open('https://calendly.com/zyberstar/strategy-call', '_blank')}
+              >
                 Schedule Strategy Call
               </Button>
             </div>

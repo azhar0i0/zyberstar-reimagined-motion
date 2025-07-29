@@ -201,7 +201,10 @@ const ContactSection = () => {
                 <p className="text-muted-foreground mb-6 text-sm leading-relaxed">
                   Schedule a 30-minute strategy session to discuss your project requirements and get expert recommendations.
                 </p>
-                <Button className="w-full hover-glow pulse-primary group">
+                <Button 
+                  className="w-full hover-glow pulse-primary group"
+                  onClick={() => window.open('https://calendly.com/zyberstar/strategy-call', '_blank')}
+                >
                   Schedule Strategy Call
                   <Calendar className="ml-2 w-4 h-4 group-hover:scale-110 transition-transform" />
                 </Button>

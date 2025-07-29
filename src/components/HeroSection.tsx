@@ -50,7 +50,7 @@ const HeroSection = () => {
             <Button 
               size="lg" 
               className="px-8 py-4 text-lg pulse-primary hover-glow group"
-              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() => window.open('https://calendly.com/zyberstar/strategy-call', '_blank')}
             >
               Schedule Strategy Call
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
