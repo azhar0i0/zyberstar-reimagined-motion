@@ -6,13 +6,13 @@ const AboutSection = () => {
   const achievements = [
     {
       icon: Users,
-      number: '150+',
+      number: '40+',
       label: 'Happy Clients',
       description: 'Satisfied customers worldwide'
     },
     {
       icon: Award,
-      number: '500+',
+      number: '150+',
       label: 'Projects Completed',
       description: 'Successful deliveries'
     },
@@ -24,7 +24,7 @@ const AboutSection = () => {
     },
     {
       icon: CheckCircle,
-      number: '98%',
+      number: '100%',
       label: 'Success Rate',
       description: 'Client satisfaction guaranteed'
     }
