@@ -17,8 +17,7 @@ const Footer = () => {
       'Case Studies',
       'Careers',
       'Blog',
-      'Contact',
-      'Reviews'
+      'Contact'
     ],
     Resources: [
       'Documentation',

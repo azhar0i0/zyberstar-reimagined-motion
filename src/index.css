@@ -98,12 +98,22 @@
 @layer base {
   * {
     @apply border-border;
+    transition: var(--transition-smooth);
   }
 
   body {
     @apply bg-background text-foreground font-sans antialiased;
     background: var(--gradient-hero);
     min-height: 100vh;
+    transition: var(--transition-smooth);
+  }
+
+  a, button, [role="button"] {
+    transition: all 0.3s ease;
+  }
+
+  a:hover, button:hover, [role="button"]:hover {
+    transform: translateY(-1px);
   }
 
 html {
