@@ -1,44 +1,41 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
-import webDevIcon from '@/assets/web-dev-icon.png';
-import digitalTransformIcon from '@/assets/digital-transform-icon.png';
-import uiuxIcon from '@/assets/uiux-icon.png';
+import { ArrowRight, Code, Zap, Palette, Brain, Shield, Cloud } from 'lucide-react';
 
 const ServicesSection = () => {
   const services = [
     {
-      icon: webDevIcon,
+      icon: Code,
       title: 'Web Development',
       description: 'Cutting-edge websites and applications built for performance, scalability, and elegance—perfectly tailored to your business.',
       features: ['React & Next.js', 'Full-Stack Solutions', 'API Integration', 'Performance Optimization']
     },
     {
-      icon: digitalTransformIcon,
+      icon: Zap,
       title: 'Digital Transformation',
       description: 'We modernize legacy systems and automate workflows to drive your business forward with intelligent, digital-first solutions.',
       features: ['System Modernization', 'Workflow Automation', 'Cloud Migration', 'Data Analytics']
     },
     {
-      icon: uiuxIcon,
+      icon: Palette,
       title: 'UI/UX Design',
       description: 'Beautiful, intuitive interfaces designed to captivate users and boost conversion across all digital platforms.',
       features: ['User Research', 'Wireframing', 'Prototyping', 'Design Systems']
     },
     {
-      icon: digitalTransformIcon,
+      icon: Brain,
       title: 'AI & Machine Learning',
       description: 'Harness the power of artificial intelligence to automate processes, gain insights, and create intelligent applications.',
       features: ['Custom AI Models', 'Data Analytics', 'Process Automation', 'Predictive Analytics']
     },
     {
-      icon: uiuxIcon,
+      icon: Shield,
       title: 'Blockchain Solutions',
       description: 'Secure, transparent, and decentralized applications using cutting-edge blockchain technologies.',
       features: ['Smart Contracts', 'DeFi Applications', 'NFT Platforms', 'Cryptocurrency Solutions']
     },
     {
-      icon: webDevIcon,
+      icon: Cloud,
       title: 'Cloud & DevOps',
       description: 'Scalable cloud infrastructure and automated deployment pipelines for modern applications.',
       features: ['AWS/Azure/GCP', 'CI/CD Pipelines', 'Container Orchestration', 'Infrastructure as Code']
@@ -46,7 +43,7 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section id="services" className="py-20 px-6">
+    <section id="services" className="py-20 px-6 pt-32">
       <div className="container mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -70,12 +67,8 @@ const ServicesSection = () => {
               className="glass hover-glow group cursor-pointer transition-all duration-500 hover:scale-105 border-border/30"
             >
               <CardHeader className="pb-4">
-                <div className="w-16 h-16 mb-4 rounded-lg bg-gradient-primary p-3 group-hover:scale-110 transition-transform duration-300">
-                  <img 
-                    src={service.icon} 
-                    alt={service.title}
-                    className="w-full h-full object-contain filter brightness-0 invert"
-                  />
+                <div className="w-16 h-16 mb-4 rounded-lg bg-gradient-primary p-3 group-hover:scale-110 transition-transform duration-300 flex items-center justify-center">
+                  <service.icon className="w-8 h-8 text-primary-foreground" />
                 </div>
                 <CardTitle className="text-xl font-bold text-foreground group-hover:text-primary transition-colors">
                   {service.title}
