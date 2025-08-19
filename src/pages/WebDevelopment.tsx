@@ -47,14 +47,6 @@ const WebDevelopment = () => {
           <p className="text-xl text-foreground/70 mb-8 max-w-3xl mx-auto">
             Create stunning, responsive, and high-performance web applications that drive business growth and deliver exceptional user experiences.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="hover-glow">
-              Start Your Project <ArrowRight className="w-4 h-4 ml-2" />
-            </Button>
-            <Button variant="outline" size="lg">
-              View Portfolio
-            </Button>
-          </div>
         </div>
       </section>
 
@@ -171,25 +163,6 @@ const WebDevelopment = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 px-6 bg-gradient-to-br from-primary/10 to-primary/5">
-        <div className="container mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-6">
-            Ready to Build Your <span className="gradient-text">Web Application</span>?
-          </h2>
-          <p className="text-xl text-foreground/70 mb-8 max-w-2xl mx-auto">
-            Let's discuss your project requirements and create a custom solution that drives your business forward.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="hover-glow">
-              Get Started Today <ArrowRight className="w-4 h-4 ml-2" />
-            </Button>
-            <Button variant="outline" size="lg">
-              Schedule Consultation
-            </Button>
-          </div>
-        </div>
-      </section>
 
       <Footer />
     </div>

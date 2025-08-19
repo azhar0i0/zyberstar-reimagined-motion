@@ -77,14 +77,6 @@ const BlockchainSolutions = () => {
           <p className="text-xl text-foreground/70 mb-8 max-w-3xl mx-auto">
             Revolutionize your business with secure, transparent, and decentralized blockchain solutions that eliminate intermediaries and reduce costs.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="hover-glow">
-              Explore Blockchain <ArrowRight className="w-4 h-4 ml-2" />
-            </Button>
-            <Button variant="outline" size="lg">
-              Blockchain Consultation
-            </Button>
-          </div>
         </div>
       </section>
 
@@ -217,25 +209,6 @@ const BlockchainSolutions = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 px-6 bg-gradient-to-br from-primary/10 to-primary/5">
-        <div className="container mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-6">
-            Ready to <span className="gradient-text">Revolutionize</span> Your Business?
-          </h2>
-          <p className="text-xl text-foreground/70 mb-8 max-w-2xl mx-auto">
-            Join the blockchain revolution and transform your business with secure, transparent, and efficient solutions.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="hover-glow">
-              Start Blockchain Project <ArrowRight className="w-4 h-4 ml-2" />
-            </Button>
-            <Button variant="outline" size="lg">
-              Schedule Blockchain Demo
-            </Button>
-          </div>
-        </div>
-      </section>
 
       <Footer />
     </div>

@@ -77,14 +77,6 @@ const CloudDevOps = () => {
           <p className="text-xl text-foreground/70 mb-8 max-w-3xl mx-auto">
             Accelerate your development lifecycle and scale your infrastructure with enterprise-grade cloud solutions and DevOps practices that ensure reliability, security, and performance.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="hover-glow">
-              Start Cloud Journey <ArrowRight className="w-4 h-4 ml-2" />
-            </Button>
-            <Button variant="outline" size="lg">
-              Cloud Assessment
-            </Button>
-          </div>
         </div>
       </section>
 
@@ -205,25 +197,6 @@ const CloudDevOps = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 px-6 bg-gradient-to-br from-primary/10 to-primary/5">
-        <div className="container mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-6">
-            Ready to <span className="gradient-text">Scale</span> Your Infrastructure?
-          </h2>
-          <p className="text-xl text-foreground/70 mb-8 max-w-2xl mx-auto">
-            Let's build a cloud infrastructure that powers your business growth and ensures reliability at scale.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="hover-glow">
-              Start Cloud Migration <ArrowRight className="w-4 h-4 ml-2" />
-            </Button>
-            <Button variant="outline" size="lg">
-              Schedule Infrastructure Review
-            </Button>
-          </div>
-        </div>
-      </section>
 
       <Footer />
     </div>

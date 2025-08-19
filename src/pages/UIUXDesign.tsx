@@ -77,14 +77,6 @@ const UIUXDesign = () => {
           <p className="text-xl text-foreground/70 mb-8 max-w-3xl mx-auto">
             Create intuitive, engaging, and beautiful digital experiences that convert visitors into loyal customers through user-centered design principles.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="hover-glow">
-              Start Design Project <ArrowRight className="w-4 h-4 ml-2" />
-            </Button>
-            <Button variant="outline" size="lg">
-              View Design Portfolio
-            </Button>
-          </div>
         </div>
       </section>
 
@@ -208,25 +200,6 @@ const UIUXDesign = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 px-6 bg-gradient-to-br from-primary/10 to-primary/5">
-        <div className="container mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-6">
-            Ready to Create <span className="gradient-text">Amazing</span> User Experiences?
-          </h2>
-          <p className="text-xl text-foreground/70 mb-8 max-w-2xl mx-auto">
-            Let's collaborate to design interfaces that your users will love and that drive your business goals forward.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="hover-glow">
-              Start Design Project <ArrowRight className="w-4 h-4 ml-2" />
-            </Button>
-            <Button variant="outline" size="lg">
-              Schedule Design Consultation
-            </Button>
-          </div>
-        </div>
-      </section>
 
       <Footer />
     </div>

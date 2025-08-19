@@ -61,14 +61,6 @@ const DigitalTransformation = () => {
           <p className="text-xl text-foreground/70 mb-8 max-w-3xl mx-auto">
             Accelerate your digital journey with comprehensive transformation strategies that modernize operations, enhance customer experiences, and drive sustainable growth.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="hover-glow">
-              Start Transformation <ArrowRight className="w-4 h-4 ml-2" />
-            </Button>
-            <Button variant="outline" size="lg">
-              Assess Your Readiness
-            </Button>
-          </div>
         </div>
       </section>
 
@@ -189,25 +181,6 @@ const DigitalTransformation = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 px-6 bg-gradient-to-br from-primary/10 to-primary/5">
-        <div className="container mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-6">
-            Ready to <span className="gradient-text">Transform</span> Your Business?
-          </h2>
-          <p className="text-xl text-foreground/70 mb-8 max-w-2xl mx-auto">
-            Let's create a customized digital transformation roadmap that aligns with your business goals and drives sustainable growth.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="hover-glow">
-              Begin Your Journey <ArrowRight className="w-4 h-4 ml-2" />
-            </Button>
-            <Button variant="outline" size="lg">
-              Download Strategy Guide
-            </Button>
-          </div>
-        </div>
-      </section>
 
       <Footer />
     </div>
