@@ -5,26 +5,17 @@ import { Github, Linkedin, Twitter, Mail } from 'lucide-react';
 const Footer = () => {
   const footerLinks = {
     Services: [
-      'Web Development',
-      'Digital Transformation',
-      'UI/UX Design',
-      'Brand Strategy',
-      'Game Development',
-      'Social Media'
+      { name: 'Web Development', href: '/web-development' },
+      { name: 'Digital Transformation', href: '/digital-transformation' },
+      { name: 'UI/UX Design', href: '/ui-ux-design' },
+      { name: 'AI & Machine Learning', href: '/ai-machine-learning' },
+      { name: 'Blockchain Solutions', href: '/blockchain-solutions' },
+      { name: 'Cloud & DevOps', href: '/cloud-devops' }
     ],
     Company: [
-      'About Us',
-      'Careers',
-      'Blog',
-      'Contact'
-    ],
-    Resources: [
-      'Documentation',
-      'Support',
-      'Privacy Policy',
-      'Terms of Service',
-      'Cookie Policy',
-      'Sitemap'
+      { name: 'About Us', href: '/about' },
+      { name: 'Contact', href: '/contact' },
+      { name: 'Portfolio', href: '/portfolio' }
     ]
   };
 
@@ -73,10 +64,10 @@ const Footer = () => {
                 {links.map((link, index) => (
                   <li key={index}>
                     <a
-                      href="#"
+                      href={link.href}
                       className="text-foreground/70 hover:text-primary transition-colors text-sm animated-underline"
                     >
-                      {link}
+                      {link.name}
                     </a>
                   </li>
                 ))}
@@ -85,29 +76,6 @@ const Footer = () => {
           ))}
         </div>
 
-        {/* Newsletter Section */}
-        <div className="glass rounded-2xl p-8 mb-12 border border-border/30">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div>
-              <h3 className="text-2xl font-bold mb-2">
-                Stay updated with <span className="gradient-text">ZyberStar</span>
-              </h3>
-              <p className="text-foreground/70">
-                Get the latest insights on technology trends, case studies, and industry best practices.
-              </p>
-            </div>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="flex-1 px-4 py-3 bg-secondary/50 border border-border/50 rounded-lg focus:outline-none focus:border-primary transition-colors"
-              />
-              <Button className="px-6 py-3 hover-glow">
-                Subscribe
-              </Button>
-            </div>
-          </div>
-        </div>
 
         <Separator className="my-8 bg-border/30" />
 

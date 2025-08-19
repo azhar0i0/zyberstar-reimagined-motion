@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Code, Zap, Palette, Brain, Shield, Cloud } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const ServicesSection = () => {
   const services = [
@@ -8,37 +9,43 @@ const ServicesSection = () => {
       icon: Code,
       title: 'Web Development',
       description: 'Cutting-edge websites and applications built for performance, scalability, and elegance—perfectly tailored to your business.',
-      features: ['React & Next.js', 'Full-Stack Solutions', 'API Integration', 'Performance Optimization']
+      features: ['React & Next.js', 'Full-Stack Solutions', 'API Integration', 'Performance Optimization'],
+      href: '/web-development'
     },
     {
       icon: Zap,
       title: 'Digital Transformation',
       description: 'We modernize legacy systems and automate workflows to drive your business forward with intelligent, digital-first solutions.',
-      features: ['System Modernization', 'Workflow Automation', 'Cloud Migration', 'Data Analytics']
+      features: ['System Modernization', 'Workflow Automation', 'Cloud Migration', 'Data Analytics'],
+      href: '/digital-transformation'
     },
     {
       icon: Palette,
       title: 'UI/UX Design',
       description: 'Beautiful, intuitive interfaces designed to captivate users and boost conversion across all digital platforms.',
-      features: ['User Research', 'Wireframing', 'Prototyping', 'Design Systems']
+      features: ['User Research', 'Wireframing', 'Prototyping', 'Design Systems'],
+      href: '/ui-ux-design'
     },
     {
       icon: Brain,
       title: 'AI & Machine Learning',
       description: 'Harness the power of artificial intelligence to automate processes, gain insights, and create intelligent applications.',
-      features: ['Custom AI Models', 'Data Analytics', 'Process Automation', 'Predictive Analytics']
+      features: ['Custom AI Models', 'Data Analytics', 'Process Automation', 'Predictive Analytics'],
+      href: '/ai-machine-learning'
     },
     {
       icon: Shield,
       title: 'Blockchain Solutions',
       description: 'Secure, transparent, and decentralized applications using cutting-edge blockchain technologies.',
-      features: ['Smart Contracts', 'DeFi Applications', 'NFT Platforms', 'Cryptocurrency Solutions']
+      features: ['Smart Contracts', 'DeFi Applications', 'NFT Platforms', 'Cryptocurrency Solutions'],
+      href: '/blockchain-solutions'
     },
     {
       icon: Cloud,
       title: 'Cloud & DevOps',
       description: 'Scalable cloud infrastructure and automated deployment pipelines for modern applications.',
-      features: ['AWS/Azure/GCP', 'CI/CD Pipelines', 'Container Orchestration', 'Infrastructure as Code']
+      features: ['AWS/Azure/GCP', 'CI/CD Pipelines', 'Container Orchestration', 'Infrastructure as Code'],
+      href: '/cloud-devops'
     }
   ];
 
@@ -92,10 +99,12 @@ const ServicesSection = () => {
                 <Button 
                   variant="ghost" 
                   className="w-full group/btn text-primary hover:text-primary-foreground hover:bg-primary mt-4"
-                  onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                  asChild
                 >
-                  Learn More
-                  <ArrowRight className="ml-2 w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
+                  <Link to={service.href}>
+                    Learn More
+                    <ArrowRight className="ml-2 w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
+                  </Link>
                 </Button>
               </CardContent>
             </Card>
